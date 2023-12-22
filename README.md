@@ -92,6 +92,8 @@ The `launch_model_training` function orchestrates the entire process of training
 
 ![image](https://github.com/AliAmini93/ViViT-Medical-Video-Classification/assets/96921261/617f5de4-e154-4e25-9b7c-0daa955c4812)
 
+![image](https://github.com/AliAmini93/ViViT-Medical-Video-Classification/assets/96921261/8654f408-34b3-46a1-abee-6b415d2eb29d)
+
 ## Visualization of Model Predictions
 
 To visually demonstrate the model's ability to classify video data, the final code cell generates GIFs from the video samples and displays the model's predictions alongside the actual labels.
