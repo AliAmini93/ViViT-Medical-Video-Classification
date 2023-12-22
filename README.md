@@ -90,6 +90,7 @@ The `launch_model_training` function orchestrates the entire process of training
    
 2. **Early Stopping:** Implements an EarlyStopping callback to halt the training process if the validation loss does not improve for 10 consecutive epochs. This helps in preventing overfitting and ensures efficient training.
 
+![image](https://github.com/AliAmini93/ViViT-Medical-Video-Classification/assets/96921261/617f5de4-e154-4e25-9b7c-0daa955c4812)
 
 
 
