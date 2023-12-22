@@ -47,4 +47,40 @@ In Vision Transformers (ViTs), an image is divided into patches, which are then 
 | :--: |
 | Tubelet Embedding [Source](https://arxiv.org/abs/2103.15691) |
 
+## Positional Encoding
+
+### Concept
+In the context of transformers, it's crucial to provide the model with some information about the order or position of the tokens in the sequence. This is where the `PositionalEncoder` layer comes into play. It adds positional information to the encoded video tokens, which is essential for the model to understand the sequence of the input data, especially when dealing with video frames where temporal information is key.
+
+### Implementation in Code
+The `PositionalEncoder` class is designed to generate and add positional embeddings to the token sequences.
+
+## Video Vision Transformer (ViViT)
+
+### Overview
+The ViViT architecture, a derivative of the Vision Transformer (ViT), is designed to handle the complexities of video data. The authors of ViViT suggest four variants:
+
+- Spatio-temporal attention
+- Factorized encoder
+- Factorized self-attention
+- Factorized dot-product attention
+
+In this project, we focus on implementing the **Spatio-temporal attention** model for its simplicity and effectiveness in capturing both spatial and temporal dimensions of video data. The following implementation is heavily inspired by the [Image classification with Vision Transformer](https://keras.io/examples/vision/image_classification_with_vision_transformer/) and the [official ViViT repository](https://github.com/google-research/scenic/tree/main/scenic/projects/vivit) implemented in JAX.
+
+### Model Implementation
+
+The `build_vivit_model` function constructs the ViViT model with the following key steps:
+
+1. **Input Tensor Initialization:** Defines the input shape of the video data.
+2. **Tubelet Embedding:** Generates patches from the input video and projects them into an embedding space using the `TubeletEmbedding` class.
+3. **Positional Encoding:** Adds positional information to the patches using the `PositionalEncoder` class.
+4. **Transformer Layers:** Constructs several layers of the transformer. Each layer includes:
+   - Layer normalization and multi-head self-attention for processing the sequence of embeddings.
+   - Residual connections to facilitate deeper architecture without the vanishing gradient problem.
+   - Additional layer normalization followed by dense layers for further feature extraction.
+
+5. **Final Representation:** Applies layer normalization and global average pooling to the output of the last transformer layer, preparing it for classification.
+6. **Classification Layer:** A dense layer that outputs probabilities for each class.
+
+
 
