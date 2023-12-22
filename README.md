@@ -108,7 +108,7 @@ To visually demonstrate the model's ability to classify video data, the final co
 While the current implementation of the ViViT model demonstrates effective video classification, there are several avenues for further enhancement and exploration:
 
 ### Hyperparameter Optimization
--Hyperparameter optimization plays a critical role in fine-tuning machine learning models to achieve the best performance. For this project, hyperparameters were initially selected through an empirical approach, focusing on balancing model complexity and computational efficiency. However, to further enhance the model's performance, a systematic hyperparameter search was conducted using Bayesian Optimization.
+-Hyperparameter optimization plays a critical role in fine-tuning machine learning models to achieve the best performance. For this project, hyperparameters were initially selected through an empirical approach, focusing on balancing model complexity and computational efficiency. However, to further enhance the model's performance, a systematic hyperparameter search was conducted using Bayesian optimization.
 
 ### Potential Enhancements
 1. **Data Augmentation for Videos:** Implementing video-specific data augmentation techniques can enhance the model's ability to generalize and improve its robustness against overfitting.
