@@ -32,3 +32,19 @@ This repository contains the complete code for setting up, training, and evaluat
 - **Transformer Layers:** 8 - The number of layers in the ViViT model.
 
 This configuration sets the stage for training a robust and effective model capable of handling the complexities of medical video data. The chosen parameters are optimized to balance performance and computational efficiency.
+
+## Tubelet Embedding
+
+In Vision Transformers (ViTs), an image is divided into patches, which are then spatially flattened in a process known as tokenization. For a video, one can repeat this process for individual frames. **Uniform frame sampling**, as suggested by the authors, is a tokenization scheme in which frames are sampled from the video clip and undergo simple ViT tokenization.
+
+| ![uniform frame sampling](https://i.imgur.com/aaPyLPX.png) |
+| :--: |
+| Uniform Frame Sampling [Source](https://arxiv.org/abs/2103.15691) |
+
+**Tubelet Embedding** differs in terms of capturing temporal information from the video. First, volumes are extracted from the video — these volumes contain patches of the frame and the temporal information as well. The volumes are then flattened to build video tokens.
+
+| ![tubelet embedding](https://i.imgur.com/9G7QTfV.png) |
+| :--: |
+| Tubelet Embedding [Source](https://arxiv.org/abs/2103.15691) |
+
+
