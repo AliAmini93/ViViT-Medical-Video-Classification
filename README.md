@@ -92,5 +92,15 @@ The `launch_model_training` function orchestrates the entire process of training
 
 ![image](https://github.com/AliAmini93/ViViT-Medical-Video-Classification/assets/96921261/617f5de4-e154-4e25-9b7c-0daa955c4812)
 
+## Visualization of Model Predictions
+
+To visually demonstrate the model's ability to classify video data, the final code cell generates GIFs from the video samples and displays the model's predictions alongside the actual labels.
+
+### Process Overview
+
+1. **Sample Selection:** A set of 25 samples is chosen from the testing dataset for visualization purposes.
+2. **GIF Generation:** Each video sample is processed and converted into a GIF format. This involves ensuring the correct dimensionality and color format for the video data.
+3. **Model Prediction:** The trained ViViT model predicts the class for each video sample.
+4. **Label Mapping:** Both actual and predicted labels are mapped to their respective class names as defined in the dataset.
 
 
