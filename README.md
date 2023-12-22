@@ -103,4 +103,17 @@ To visually demonstrate the model's ability to classify video data, the final co
 3. **Model Prediction:** The trained ViViT model predicts the class for each video sample.
 4. **Label Mapping:** Both actual and predicted labels are mapped to their respective class names as defined in the dataset.
 
+## Future Works and Improvements
+
+While the current implementation of the ViViT model demonstrates effective video classification, there are several avenues for further enhancement and exploration:
+
+### Hyperparameter Optimization
+-Hyperparameter optimization plays a critical role in fine-tuning machine learning models to achieve the best performance. For this project, hyperparameters were initially selected through an empirical approach, focusing on balancing model complexity and computational efficiency. However, to further enhance the model's performance, a systematic hyperparameter search was conducted using Bayesian Optimization.
+
+### Potential Enhancements
+1. **Data Augmentation for Videos:** Implementing video-specific data augmentation techniques can enhance the model's ability to generalize and improve its robustness against overfitting.
+2. **Advanced Regularization Schemes:** Exploring and applying more sophisticated regularization methods could lead to better training stability and model performance.
+3. **Experimentation with Transformer Variants:** As suggested in the original ViViT paper, experimenting with different variants of the transformer model, such as factorized self-attention or spatio-temporal attention, could yield improvements in classification accuracy and computational efficiency.
+
+
 
