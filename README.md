@@ -117,7 +117,7 @@ While the current implementation of the ViViT model demonstrates effective video
 
 ## Acknowledgements
 
-A heartfelt thank you to [Aritra Roy Gosthipaty](https://twitter.com/ariG23498) and [Ayush Thakur](https://twitter.com/ayushthakur0) for their invaluable contributions and insights. The code provided in this repository was greatly inspired by their efforts and their work has been instrumental in shaping the development of this project.
+A heartfelt thank you to [Aritra Roy Gosthipaty](https://twitter.com/ariG23498) and [Ayush Thakur](https://twitter.com/ayushthakur0) for their invaluable contributions and insights. The code provided in this repository was inspired by their efforts and their work has been instrumental in shaping the development of this project.
 
 
 
