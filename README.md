@@ -115,5 +115,9 @@ While the current implementation of the ViViT model demonstrates effective video
 2. **Advanced Regularization Schemes:** Exploring and applying more sophisticated regularization methods could lead to better training stability and model performance.
 3. **Experimentation with Transformer Variants:** As suggested in the original ViViT paper, experimenting with different variants of the transformer model, such as factorized self-attention or spatio-temporal attention, could yield improvements in classification accuracy and computational efficiency.
 
+## Acknowledgements
+
+A heartfelt thank you to [Aritra Roy Gosthipaty](https://twitter.com/ariG23498) and [Ayush Thakur](https://twitter.com/ayushthakur0) for their invaluable contributions and insights. The code provided in this repository was greatly inspired by their efforts and their work has been instrumental in shaping the development of this project.
+
 
 
