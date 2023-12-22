@@ -81,3 +81,15 @@ The `build_vivit_model` function constructs the ViViT model with the following k
 
 5. **Final Representation:** Applies layer normalization and global average pooling to the output of the last transformer layer, preparing it for classification.
 6. **Classification Layer:** A dense layer that outputs probabilities for each class.
+
+## Model Training and Evaluation
+
+The `launch_model_training` function orchestrates the entire process of training and evaluating the ViViT model. Key steps in this process include:
+
+1. **Model Evaluation:** Assesses the model's performance on the testing dataset, providing a final accuracy and top-5 accuracy.
+   
+2. **Early Stopping:** Implements an EarlyStopping callback to halt the training process if the validation loss does not improve for 10 consecutive epochs. This helps in preventing overfitting and ensures efficient training.
+
+
+
+
