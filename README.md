@@ -81,6 +81,3 @@ The `build_vivit_model` function constructs the ViViT model with the following k
 
 5. **Final Representation:** Applies layer normalization and global average pooling to the output of the last transformer layer, preparing it for classification.
 6. **Classification Layer:** A dense layer that outputs probabilities for each class.
-
-
-
