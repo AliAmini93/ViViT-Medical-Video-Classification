@@ -65,7 +65,7 @@ The ViViT architecture, a derivative of the Vision Transformer (ViT), is designe
 - Factorized self-attention
 - Factorized dot-product attention
 
-In this project, we focus on implementing the **Spatio-temporal attention** model for its simplicity and effectiveness in capturing both spatial and temporal dimensions of video data. The following implementation is heavily inspired by the [Image classification with Vision Transformer](https://keras.io/examples/vision/image_classification_with_vision_transformer/) and the [official ViViT repository](https://github.com/google-research/scenic/tree/main/scenic/projects/vivit) implemented in JAX.
+In this project, we focus on implementing the **Spatio-temporal attention** model for its simplicity and effectiveness in capturing both spatial and temporal dimensions of video data. The following implementation is inspired by the [Image classification with Vision Transformer](https://keras.io/examples/vision/image_classification_with_vision_transformer/) and the [official ViViT repository](https://github.com/google-research/scenic/tree/main/scenic/projects/vivit) implemented in JAX.
 
 ### Model Implementation
 
